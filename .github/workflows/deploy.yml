@@ -26,7 +26,7 @@ jobs:
 
       - name: Publish Blazor WebAssembly
         run: |
-          dotnet publish -c BlazorApp/BlazorApp/BlazorApp.csproj -c Release -o build_output
+          dotnet publish BlazorApp/BlazorApp/BlazorApp.csproj -c Release -o build_output
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
